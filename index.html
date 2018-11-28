@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="page-top">
+<nav class="navbar navbar-dark navbar-expand-md fixed-top bg-default" style="height: 58px;">
+    <div class="container-fluid"><a class="navbar-brand" href="#">TEDDinsight</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="services.html">Our Services
+                    <!--<i class="fa fa-sort-desc services"></i>--></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Testimonial</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="team.html">Our Team</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <div id="home">
+        <div id="owl-demo" class="owl-carousel owl-theme slider-header">
+            <div class="item">
+                <div class="slider-image1 bgimage-property">
+                    <div>
+                        <div class="container">
+                            <div class="col-sm-12 col-md-12 col-lg-8 text-left no-pad">
+                                <div class="header-div slider-padding">
+                                    <h5>TEDDinsight AGENCY</h5>
+                                    <h1 class="margin-bot-10">TEDDinsight Company Agency</h1>
+                                    <p class="header-content">Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel
+                                        magna lacinia ultrices. commodo tristique. Duis lacus urna, condimentum a
+                                        vehicula a, hendrerit ac nisi lorem ipsum vulputate
+                                    </p>
+                                    <div class="btn-top-space">
+                                        <a href="#" class="head-btn">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-image2 bgimage-property">
+                    <div>
+                        <div class="container">
+                            <div class="col-sm-12 col-md-12 col-lg-8 column-center text-center no-pad">
+                                <div class="header-div slider-padding">
+                                    <h5>TEDDinsight AGENCY</h5>
+                                    <h1 class="margin-bot-10">TEDDinsight Company Agency</h1>
+                                    <p class="header-content">Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel
+                                        magna lacinia ultrices. commodo tristique. Duis lacus urna, condimentum a
+                                        vehicula a, hendrerit ac nisi lorem ipsum vulputate
+                                    </p>
+                                    <div class="btn-top-space">
+                                        <a href="#" class="head-btn">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-image3 bgimage-property">
+                    <div>
+                        <div class="container">
+                            <div class="col-sm-12 col-md-12 col-lg-8 offset-lg-4">
+                                <div class="header-div slider-padding text-left">
+                                    <h5>TEDDinsight AGENCY</h5>
+                                    <h1 class="margin-bot-10">TEDDinsight Company Agency</h1>
+                                    <p class="header-content">Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel
+                                        magna lacinia ultrices. commodo tristique. Duis lacus urna, condimentum a
+                                        vehicula a, hendrerit ac nisi lorem ipsum vulputate
+                                    </p>
+                                    <div class="btn-top-space">
+                                        <a href="#" class="head-btn">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/owl-slider.js"></script>
+<script src="assets/js/stylish-portfolio.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var owl = $("#owl-demo");
+        owl.owlCarousel({
+            autoPlay: 4000,
+            items: 3, //2 items above 1000px browser width
+            itemsDesktop: [1920, 1], //2 items between 1920px and 901px
+            itemsDesktopSmall: [900, 1], // 2 items betweem 900px and 641px
+            itemsTablet: [640, 1], //1 item between 640 and 0
+            itemsMobile: [380, 1]
+        });
+
+        // Custom Navigation Events
+        $(".next").click(function () {
+            owl.trigger('owl.next');
+        })
+        $(".prev").click(function () {
+            owl.trigger('owl.prev');
+        })
+        $(".play").click(function () {
+            owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
+        })
+        $(".stop").click(function () {
+            owl.trigger('owl.stop');
+        })
+
+
+        // TESTIMONIAL CAROUSEL
+        var owl = $("#owl-demo1");
+        owl.owlCarousel({
+            autoPlay: 4000,
+            items: 3, //10 items above 1000px browser width
+            itemsDesktop: [1920, 2], //5 items between 1000px and 901px
+            itemsDesktopSmall: [900, 1], // betweem 900px and 601px
+            itemsTablet: [600, 1], //2 items between 600 and 0
+            itemsMobile: [380, 1]
+        });
+
+        // Custom Navigation Events
+        $(".next").click(function () {
+            owl.trigger('owl.next');
+        })
+        $(".prev").click(function () {
+            owl.trigger('owl.prev');
+        })
+        $(".play").click(function () {
+            owl.trigger('owl.play', 1000); //owl.play event accept autoPlay speed as second parameter
+        })
+        $(".stop").click(function () {
+            owl.trigger('owl.stop');
+        })
+
+    });
+
+</script>
+</body>
+
+</html>
