@@ -29,14 +29,15 @@
                         <!--<i class="fa fa-sort-desc services"></i>--></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#">Testimonial</a>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact.html">Contact
+                        Us</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="team.html">Our Team</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://medium.com/">Blog</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://medium.com/">Blog</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <section class="contact">
         <div class="container contact-form">
             <div class="contact-image">
@@ -45,32 +46,49 @@
             <form method="post">
                 <h3>Drop Us a Message</h3>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value=""/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value=""/>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
-                                   value=""/>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message"/>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *"
+                                           value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtCompanyName" class="form-control"
+                                           placeholder="Company Name *" value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *"
+                                           value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control"
+                                           placeholder="Your Phone Number *"
+                                           value=""/>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="service_requested">
+                                        <option>What Service are you requesting?</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                 <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                              style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-                              style="width: 100%; height: 150px;"></textarea>
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message"/>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
-
 </div>
 
 <script src="assets/js/jquery.min.js"></script>
