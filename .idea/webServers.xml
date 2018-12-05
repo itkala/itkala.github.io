@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9618ed93-9e95-4d2e-a5a5-8570245f9a77" name="teddinsight" url="http://ftp.teddinsight.com.ng">
+        <fileTransfer host="ftp.teddinsight.com.ng" port="22" privateKey="/home/oluwatayo/.ssh/id_rsa" rootFolder="/home/teddins1" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - TEDDINSIGHT</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/mdb.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/owl.theme.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -22,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -30,20 +32,59 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130525619-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130525619-1');
+    </script>
 </head>
 
-<body id="page-top">
-<nav class="navbar navbar-dark navbar-expand-md fixed-top" style="height: 58px; background: #ffffff; font-family: 'Montserrat', serif; font-weight: 500">
-    <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/TEDds2.png" class="img-fluid" width="50px" height="50px">TEDDINSIGHT</a>
+<body id="page-top" class="bg-white">
+<nav class="navbar navbar-light navbar-expand-md fixed-top bg-white shadow-sm">
+    <div class="container-fluid"><a class="navbar-brand" href="#"><img class="img-fluid"
+                                                                       src="https://res.cloudinary.com/cinemastiko/image/upload/v1543575349/TEDds2.png"
+                                                                       width="50px">TEDDINSIGHT</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse"
              id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item off-nav" role="presentation"><a class="nav-link" href="contact.html"><button class="btn quote-btn">Get a Quote</button></a></li>
+                <li class="nav-item off-nav" role="presentation"><a class="nav-link" href="pricing.html">
+                    <button class="btn quote-btn">Get a Quote</button>
+                </a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="services.html">Our Services
                     <!--<i class="fa fa-sort-desc services"></i>--></a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Testimonial</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <!--<li class="nav-item" role="presentation"><a class="nav-link" href="team.html">Our Team</a></li>-->
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item mobile-quote" role="presentation"><a class="nav-link" href="pricing.html">
+                    <button class="btn quote-btn">Get a Quote</button>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<nav class="navbar navbar-dark navbar-expand-md fixed-top shadow-sm p-3 mb-5 bg-white rounded"
+     style="height: 58px; background: #ffffff; font-family: 'Montserrat', serif; font-weight: 500">
+    <div class="container-fluid"><a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/cinemastiko/image/upload/v1543575349/TEDds2.png" class="img-fluid"
+                                                                       width="50px" height="50px">TEDDINSIGHT</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item off-nav" role="presentation"><a class="nav-link" href="contact.html">
+                    <button class="btn quote-btn">Get a Quote</button>
+                </a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="services.html">Our Services
+                    <!--<i class="fa fa-sort-desc services"></i>--><!--</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#">Testimonial</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="team.html">Our Team</a></li>
@@ -51,7 +92,7 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav>-->
 
 
 <header>
@@ -65,10 +106,16 @@
                                 <div class="header-div slider-padding">
                                     <!--<h5></h5>-->
                                     <h1 class="margin-bot-10">Our Services</h1>
-                                    <p class="header-content">TEDDINSIGHT is a company that started November 2018, We offer a vast range of services such as Social media marketing,
+                                    <p class="header-content"> • Content development: We develop contents for our
+                                        clients to meet their specific needs at any given time. Our content ranges from
+                                        full-text to multimedia.
+                                        • Social Media management (content inclusive): We manage client’s social media
+                                        accounts. We are here to give our client a great personality online by building
+                                        a great profile for our clients, creating the right impressions to the target
+                                        audience and selling our client’s ideas to their target market.
                                     </p>
                                     <div class="btn-top-space">
-                                        <a href="#" class="head-btn">READ MORE</a>
+                                        <a href="services.html" class="head-btn">READ MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -82,11 +129,14 @@
                         <div class="container">
                             <div class="col-sm-12 col-md-12 col-lg-8 column-center text-center no-pad">
                                 <div class="header-div slider-padding">
-                                    <h5>TEDDINSIGHT AGENCY</h5>
-                                    <h1 class="margin-bot-10">TEDDINSIGHT Company Agency</h1>
-                                    <p class="header-content">Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel
-                                        magna lacinia ultrices. commodo tristique. Duis lacus urna, condimentum a
-                                        vehicula a, hendrerit ac nisi lorem ipsum vulputate
+                                    <h1 class="margin-bot-10">Our Company</h1>
+                                    <p class="header-content">At TEDDinsight, our aim is helping individuals, public
+                                        figures and small, middle & large scale businesses build a great impression on
+                                        the cyberspace as a whole.
+                                        Our team which comprise of skilled individuals will help you grow your business
+                                        by giving you a corporate look, great online personality, maximizing growth &
+                                        profitability through data-driven insights and excellent online marketing
+                                        strategies.
                                     </p>
                                     <div class="btn-top-space">
                                         <a href="#" class="head-btn">READ MORE</a>
@@ -97,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <!--<div class="item">
                 <div class="slider-image3 bgimage-property">
                     <div>
                         <div class="container">
@@ -106,8 +156,7 @@
                                     <h5>TEDDINSIGHT AGENCY</h5>
                                     <h1 class="margin-bot-10">TEDDINSIGHT Company Agency</h1>
                                     <p class="header-content">Lorem ipsum dolor sit amet. Vestibulum imperdiet nibh vel
-                                        magna lacinia ultrices. commodo tristique. Duis lacus urna, condimentum a
-                                        vehicula a, hendrerit ac nisi lorem ipsum vulputate
+                                        magna lacinia ultrices.
                                     </p>
                                     <div class="btn-top-space">
                                         <a href="#" class="head-btn">READ MORE</a>
@@ -117,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </header>
@@ -125,32 +174,32 @@
 <section class="service-intro">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">Our Services</h3>
+            <div class="col-md-12 text-center">
+                <a href="services.html" class="mdb-white">Our Services</a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
-                            <div class="card">
-                                <img src="https://www.eminenz.in/wp-content/uploads/2018/08/social-media-marketing.jpg" class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                            <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/8769/pen-writing-notes-studying.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
                                 <div class="card-body">
                                     <div class="services-header text-center">
 
                                     </div>
-                                    <a href="#">Social Media Marketing</a>
+                                    <a href="#">Content development</a>
                                 </div>
                             </div>
                         </div>
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body mt-4">
-                                    <h4 class="card-title text-center ">Social Media Marketing</h4>
-                                    <ul>
-                                        <li>Social Media Community Management&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                        <li>Viral Marketing</li>
-                                        <li>Brand Awareness Analysis</li>
-                                    </ul>
+                                    <h4 class="card-title text-center ">Content development</h4>
+                                    <p>
+                                        We develop contents for our clients to meet their specific needs at any given
+                                        time. Our content ranges from full-text to multimedia.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -161,27 +210,26 @@
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
-                            <div class="card">
-                                <img src="https://images.pexels.com/photos/8769/pen-writing-notes-studying.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
                                 <div class="card-body">
                                     <div class="services-header text-center">
                                     </div>
-                                    <a href="#">Web Services</a>
+                                    <a href="#">Social Media management</a>
                                 </div>
                             </div>
                         </div>
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body mt-4">
-                                    <h4 class="card-title text-center">Web Services</h4>
-                                    <ul>
-                                        <li>Website Design </li>
-                                        <li>Website Development</li>
-                                        <li>Website Maintenance</li>
-                                        <li>Search Engine Optimisation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                        <li>Web Content Development</li>
-                                        <li>Blog Article Development</li>
-                                    </ul>
+                                    <h4 class="card-title text-center">Social Media management</h4>
+                                    <p>
+                                        We manage client’s social media accounts. We are here to give our client a great
+                                        personality online by building a great profile for our clients, creating the
+                                        right impressions to the target audience and selling our client’s ideas to their
+                                        target market.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -192,49 +240,24 @@
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
-                            <div class="card">
-                                <img src="https://www.eminenz.in/wp-content/uploads/2018/08/social-media-marketing.jpg" class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
                                 <div class="card-body">
                                     <div class="services-header text-center">
                                     </div>
-                                    <a href="#">Application Services</a>
+                                    <a href="#">Digital marketing </a>
                                 </div>
                             </div>
                         </div>
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body mt-4">
-                                    <h4 class="card-title text-center">Application Services</h4>
-                                    <ul>
-                                        <li>Mobile App Development&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                        <li>App Maintenance</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 offset-md-2" >
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <img src="https://www.eminenz.in/wp-content/uploads/2018/08/social-media-marketing.jpg" class="img-fluid" style="position: relative; width: 100%; height: 100%;">
-                                <div class="card-body">
-                                    <div class="services-header text-center">
-                                    </div>
-                                    <a href="#">Email Marketing</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body mt-4">
-                                    <h4 class="card-title text-center">Email Marketing</h4>
-                                    <ul>
-                                        <li>Leads Generation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    </ul>
+                                    <h4 class="card-title text-center">Digital marketing </h4>
+                                    <p>
+                                        We amplify our client’s reach on the social media. What’s a great content
+                                        without an amplifier to help it reach a large numbers of social media users?
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -245,22 +268,81 @@
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
-                            <div class="card">
-                                <img src="https://www.eminenz.in/wp-content/uploads/2018/08/social-media-marketing.jpg" class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/1449081/pexels-photo-1449081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
                                 <div class="card-body">
                                     <div class="services-header text-center">
                                     </div>
-                                    <a href="#">Insight and Analytics</a>
+                                    <a href="#">Brand management/imaging</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body mt-4">
+                                    <h4 class="card-title text-center">Brand management/imaging</h4>
+                                    <p>
+                                        Impression building and giving our client’s a corporate look is our major
+                                        specialty.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                                <div class="card-body">
+                                    <div class="services-header text-center">
+                                    </div>
+                                    <a href="#">Web analytics & Social media analytics</a>
                                 </div>
                             </div>
                         </div>
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Insight and Analytics</h4>
-                                    <ul>
-                                        <li>Real Time Progress Report&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                    </ul>
+                                    <h4 class="card-title">Web analytics & Social media analytics</h4>
+                                    <p>
+                                        Our operations at teddinsight is data-driven. We use metrics to given our
+                                        client’s the best service. We turn mere numbers to accomplishment and also we
+                                        help you measure your progress.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card shadow p-3 mb-5 bg-white rounded">
+                                <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                     class="img-fluid" style="position: relative; width: 100%; height: 100%;">
+                                <div class="card-body">
+                                    <div class="services-header text-center">
+                                    </div>
+                                    <a href="#">Search Engine Optimization</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Search Engine Optimization</h4>
+                                    <p>
+                                        We help to keep our client’s website to rank top on major search engines and
+                                        meta-search engines.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -270,6 +352,38 @@
         </div>
     </div>
 </section>
+<section class="service-intro" style="background-color: #eaeae4;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <img class="img-fluid" src="https://res.cloudinary.com/cinemastiko/image/upload/v1544001461/WhatsApp_Image_2018-12-04_at_11.30.43_PM.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <footer class="footer-basic" style="background-color: #2f2d2d;color: rgb(252,252,252);">
+        <div class="copyright">
+            <p>LPI Innovation Hub, Appleton Road (Tech. Road)</p>
+            <p> University of Ibadan.</p>
+            <p>+234 818 385 4510</p>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/teddinsight/"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/teddinsight"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/TEDDinsight-1603000319817819/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/tedd-insight-150a2715b/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#page-top">Home</a></li>
+            <li class="list-inline-item"><a href="services.html">Services</a></li>
+            <li class="list-inline-item"><a href="about.html">About</a></li>
+            <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+            <li class="list-inline-item"><a href="#">Blog</a></li>
+        </ul>
+        <p class="copyright">TEDDINSIGHT © 2018</p>
+    </footer>
+</div>
 
 <!--<section class="get-quote-section">
     <div class="container">

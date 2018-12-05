@@ -238,22 +238,7 @@ a {
 /*========================================== 2.COMMON CSS END ===========================================*/
 
 /*========================================== 3.BUTTON START ===========================================*/
-.btn {
-    cursor: pointer;
-    outline: none;
-    padding: 10px 20px;
-	background-color: #F63854;
-	border: 0;
-	display: inline-block;
-    color: #ffffff;
-    font-size: 13px;
-	font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 3px;
-	-webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
+
 .submit-but {
     background-color: #F63854;
 	border: 1px solid #F63854;
@@ -271,13 +256,6 @@ a {
 .submit-but:focus {
    color: #ffffff;
    box-shadow: none;
-}
-.btn:hover {
-    background-color: #ffffff;
-    color: #F63854;
-	-webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 .submit-but:hover {
     background-color: transparent;
@@ -571,7 +549,7 @@ a {
 }
 .slider-padding {
     padding-bottom: 250px;
-    padding-top: 250px;
+    padding-top: 100px;
 }
 /* SLIDER HEADER FONT STYLE*/
 .slider-header .header-div h1 {
@@ -620,10 +598,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-/* Video Header */
-.video-header {
-    background-image: url("../../images/video-header.jpg");
-}
 .video-padding {
 	padding-bottom: 250px;
     padding-top: 250px;
