@@ -1,5 +1,6 @@
 <?php
 require("sendgrid-php.php");
+require "apikey.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["request-form"])) {
@@ -65,7 +66,7 @@ function sendMail($to, $toName, $from, $fromName, $subject, $message)
     $email->addContent(
         "text/html", $message
     );
-    $sendgrid = new \SendGrid("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");
+    $sendgrid = new \SendGrid(apiKey());
     try {
         $response = $sendgrid->send($email);
         $statusCode = intval($response->statusCode());
